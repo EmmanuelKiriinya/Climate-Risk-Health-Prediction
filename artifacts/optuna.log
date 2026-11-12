@@ -1,0 +1,25 @@
+completed 250 trials
+best SEARCH score 0.8253  params={'fam': 'lgbm', 'fset': 'core_regime', 'spw': 1.3599198869839608, 'lr': 0.011374471419103494, 'leaves': 53, 'mcs': 41, 'sub': 0.868088589184808, 'col': 0.8288246650597182, 'l2': 0.001222299102744292, 'l1': 2.8346683989414245, 'rounds': 263}
+
+=== HOLDOUT RE-SCORE of top-10 trials (fold seeds 100-119) ===
+rank  search  holdout    drift  fam  fset
+   1  0.8253   0.8241  -0.0012  lgbm core_regime
+   2  0.8251   0.8239  -0.0013  lgbm core_regime
+   3  0.8251   0.8239  -0.0011  lgbm core_regime
+   4  0.8251   0.8238  -0.0013  lgbm core_regime
+   5  0.8250   0.8235  -0.0016  lgbm core_regime
+   6  0.8250   0.8235  -0.0015  lgbm core_regime
+   7  0.8250   0.8241  -0.0009  lgbm core_regime
+   8  0.8250   0.8236  -0.0013  lgbm core_regime
+   9  0.8250   0.8236  -0.0013  lgbm core_regime
+  10  0.8249   0.8233  -0.0016  lgbm core_regime
+
+best holdout from Optuna : 0.8241
+incumbent xgb_core holdout: 0.8223
+v7 blend holdout          : 0.8229     Bayes ceiling: 0.8237
+
+hyperparameter importances:
+  spw        0.462
+  fset       0.351
+  lr         0.160
+  fam        0.027

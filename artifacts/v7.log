@@ -1,0 +1,11 @@
+xgb_core  combo=0.8223 +/- 0.0003  F1=0.8194 AUC=0.8276
+cat_core  combo=0.8217 +/- 0.0002  F1=0.8207 AUC=0.8269
+xgb_v3    combo=0.8222 +/- 0.0003  F1=0.8177 AUC=0.8287
+
+BLEND (equal 1/3) combo=0.8230 +/- 0.0003  F1=0.8190 AUC=0.8286
+bagged-vs-fulldata test probs: corr=0.9995 binary agreement=0.9961
+
+submission_v7.csv  n=1030  pos-rate=0.8447  prob=[0.1573,0.9792]  ALL ASSERTIONS PASSED
+  vs submission_v4.csv:  47 binary rows differ, prob corr=0.9663
+  vs submission_v5.csv:  10 binary rows differ, prob corr=0.9980
+  vs submission_v6.csv:  13 binary rows differ, prob corr=0.9924

@@ -1,0 +1,14 @@
+=== tie-break on 40 fresh fold seeds (700-739) ===
+  lgbm_reg  0.8244 +/- 0.0003
+  cat_core  0.8216 +/- 0.0002
+  xgb_v3    0.8219 +/- 0.0002
+  blend      0.8242 +/- 0.0002
+  difference (blend - solo) = -0.0002 +/- 0.0003  (paired, same folds)
+  -> statistical TIE
+
+=== recomputed Bayes ceiling with the better model ===
+  calibrated mean p=0.6541 vs actual 0.6507
+  AUC 0.8103  F1* 0.8195  combo 0.8158 +/- 0.0055
+  (old ceiling from the weaker model: 0.8237)
+  our best measured: 0.8249  -> gap to new ceiling -0.0091
+  leader 0.864258 vs new ceiling: +0.0484

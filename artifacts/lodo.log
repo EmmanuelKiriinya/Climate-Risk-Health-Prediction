@@ -1,0 +1,23 @@
+districts: {'Iganga': 1973, 'Eastern Region': 524, 'Mayuge': 268, 'Bugweri': 199, 'Western Region': 128, 'Entebbe City': 54}
+
+member      LODO combo      F1     AUC   (village-CV combo for reference)
+xgb_core        0.8218  0.8186  0.8267   0.8223  (-0.0005)
+cat_core        0.8228  0.8199  0.8271   0.8215  (+0.0013)
+xgb_v3          0.8208  0.8168  0.8267   0.8224  (-0.0016)
+xgb_full        0.8190  0.8190  0.8189   0.8178  (+0.0012)
+cat_full        0.8149  0.8151  0.8146   0.8140  (+0.0009)
+lgbm_full       0.8131  0.8133  0.8129   0.8131  (+0.0000)
+
+CORE TRIO (v7)           LODO combo=0.8224  F1=0.8185 AUC=0.8281
+core trio + xgb_full     LODO combo=0.8216  F1=0.8173 AUC=0.8280
+core 75% + full 25%      LODO combo=0.8221  F1=0.8182 AUC=0.8279
+core 50% + full 50%      LODO combo=0.8225  F1=0.8202 AUC=0.8258
+FULL TRIO (v4-style)     LODO combo=0.8178  F1=0.8179 AUC=0.8177
+
+per-district breakdown (core trio vs full trio):
+  Iganga           n= 1973  core AUC=0.8301  full AUC=0.8180
+  Eastern Region   n=  524  core AUC=0.8304  full AUC=0.8185
+  Mayuge           n=  268  core AUC=0.8403  full AUC=0.8383
+  Bugweri          n=  199  core AUC=0.8176  full AUC=0.8103
+  Entebbe City     n=   54  core AUC=0.7887  full AUC=0.7730
+  Western Region   n=  128  core AUC=0.8202  full AUC=0.8246

@@ -1,0 +1,11 @@
+key,cells,X2_df,perm_p,verdict
+exact age,75,2.664230871235897,0.9825,no signal beyond chance
+age x sex,64,2.4283104438542975,0.9925,no signal beyond chance
+age x zone,56,2.4255146804276073,1.0,no signal beyond chance
+age x year,33,2.836157680384459,0.945,no signal beyond chance
+age x month,38,2.3648545804598013,0.9775,no signal beyond chance
+sex x year,30,6.156265419652416,0.825,no signal beyond chance
+age-band x year,64,3.3485401658991503,0.8275,no signal beyond chance
+age-band x sex x era,20,9.242412904220235,0.2775,no signal beyond chance
+age x sex x year,50,2.374729510814922,0.715,no signal beyond chance
+age x era x sex x zone,33,3.281095205248115,0.9,no signal beyond chance

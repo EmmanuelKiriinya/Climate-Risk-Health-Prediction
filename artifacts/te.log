@@ -1,0 +1,14 @@
+running 132 jobs on 10 workers...
+
+variant                     sel(0-5)  hold(100-105)    drift
+baseline (no TE)              0.8218         0.8224  +0.0006
+TE age                        0.8100         0.8088  -0.0012
+TE age m=5                    0.8093         0.8086  -0.0006
+TE age m=50                   0.8109         0.8095  -0.0014
+TE age_era                    0.8121         0.8108  -0.0013
+TE age_era m=50               0.8150         0.8141  -0.0008
+TE band_year                  0.8188         0.8188  +0.0000
+TE band_era                   0.8222         0.8221  -0.0002
+TE age + band_year            0.8135         0.8122  -0.0013
+monotone year<=0              0.8206         0.8206  -0.0000
+TE age + monotone year        0.8089         0.8075  -0.0015

@@ -1,0 +1,14 @@
+core-trio OOF: mean p=0.7368, observed rate=0.6507
+
+join key                              cells  n>=10   X2/df    chi2 p  perm p  verdict
+--------------------------------------------------------------------------------------------------------
+location only (site)                     43     40   4.955    0.0000   0.698  no signal beyond chance
+location only (village)                  38     35   5.602    0.0000   0.520  no signal beyond chance
+location only (district)                  6      6  27.248    0.0000   0.845  no signal beyond chance
+time only (year)                         16     15  11.462    0.0000   0.767  no signal beyond chance
+time only (month-of-year)                12     12  14.024    0.0000   0.855  no signal beyond chance
+time only (year-quarter)                 60     56   3.590    0.0000   0.970  no signal beyond chance
+location x time (site x year)           504     97   1.659    0.0000   0.882  no signal beyond chance
+location x time (district x year)        90     56   3.732    0.0000   0.623  no signal beyond chance
+location x time (site x month)          474     93   1.911    0.0000   0.427  no signal beyond chance
+location x time (village x quarter)    1334     17   1.667    0.0411   0.535  no signal beyond chance

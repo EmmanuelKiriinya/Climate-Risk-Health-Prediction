@@ -1,0 +1,21 @@
+adversarial train-vs-test AUC on FULL (incl. lat/lon)         = 1.0000  weights mean=0.050 p10=0.050 p90=0.050
+adversarial train-vs-test AUC on CORE (what the model sees)   = 0.6933  weights mean=0.316 p10=0.146 p90=0.476
+  (AUC 1.0 on FULL means lat/lon identify the split outright -> those weights are
+   degenerate; the reweighted scheme below uses CORE-space density ratios.)
+
+running 120 scheme x model x rep jobs on 10 workers...
+
+scheme                    xgb_core  cat_core    xgb_v3  xgb_full  cat_full  core-full
+-------------------------------------------------------------------------------------
+StratKFold                  0.8233    0.8219    0.8227    0.8179    0.8123    +0.0075
+GroupVillage                0.8216    0.8211    0.8210    0.8173    0.8134    +0.0061
+GroupSite                   0.8226    0.8210    0.8210    0.8171    0.8127    +0.0069
+LeaveOneDistrictOut         0.8217    0.8224    0.8207    0.8184    0.8153    +0.0052
+LeaveOneVillageOut          0.8231    0.8234    0.8225    0.8187    0.8163    +0.0057
+MonteCarlo(strat)           0.8281    0.8276    0.8289    0.8239    0.8215    +0.0051
+GroupShuffle(village)       0.8212    0.8204    0.8202    0.8147    0.8133    +0.0068
+StratByAgeEraCell           0.8221    0.8228    0.8222    0.8176    0.8133    +0.0070
+RollingOrigin(time)         0.8020    0.7886    0.8053    0.7866    0.7691    +0.0175
+GroupVillage+advWeight      0.8229    0.8221    0.8230    0.8195    0.8158    +0.0049
+
+core_minus_full > 0 in 10/10 schemes

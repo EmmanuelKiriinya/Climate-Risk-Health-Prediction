@@ -1,0 +1,11 @@
+key,cells,X2_df,chi2_p,perm_p,verdict
+location only (site),40,4.954565843496911,0.0,0.6975,no signal beyond chance
+location only (village),35,5.601759385564459,0.0,0.52,no signal beyond chance
+location only (district),6,27.247928061413088,0.0,0.845,no signal beyond chance
+time only (year),15,11.461523482205358,0.0,0.7675,no signal beyond chance
+time only (month-of-year),12,14.023583975413034,0.0,0.855,no signal beyond chance
+time only (year-quarter),56,3.5902925059118505,0.0,0.97,no signal beyond chance
+location x time (site x year),97,1.6593945649325463,4.8625641890120974e-05,0.8825,no signal beyond chance
+location x time (district x year),56,3.7318735210602685,0.0,0.6225,no signal beyond chance
+location x time (site x month),93,1.910704871433435,2.9608962426319607e-07,0.4275,no signal beyond chance
+location x time (village x quarter),17,1.6668946035152765,0.041149013474309104,0.535,no signal beyond chance

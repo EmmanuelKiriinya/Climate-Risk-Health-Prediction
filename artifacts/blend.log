@@ -1,0 +1,30 @@
+member          sel    hold     F1    AUC
+xgb_core     0.8221  0.8223 0.8192 0.8276
+xgb_v3       0.8216  0.8224 0.8184 0.8293
+xgb_min      0.8222  0.8223 0.8190 0.8275
+xgb_d4       0.8213  0.8214 0.8190 0.8265
+cat_core     0.8218  0.8215 0.8194 0.8272
+cat_v3       0.8193  0.8202 0.8169 0.8261
+lgbm_core    0.8189  0.8196 0.8184 0.8254
+hgb_core     0.8182  0.8178 0.8149 0.8241
+
+--- candidate weightings ---
+equal_all8                                     sel=0.8220  hold=0.8224  drift=+0.0004
+eq_xgbcore+catcore                             sel=0.8227  hold=0.8226  drift=-0.0001
+eq_xgbcore+xgbv3                               sel=0.8223  hold=0.8224  drift=+0.0002
+eq_xgbcore+catcore+xgbv3                       sel=0.8229  hold=0.8229  drift=+0.0000
+eq_xgbcore+catcore+xgbv3+lgbmcore              sel=0.8222  hold=0.8226  drift=+0.0004
+eq_xgbcore+catcore+xgbv3+xgbmin+xgbd4          sel=0.8226  hold=0.8227  drift=+0.0001
+eq_xgbcore+catcore+xgbv3+lgbmcore+xgbmin+xgbd4 sel=0.8222  hold=0.8225  drift=+0.0003
+dirichlet_fit                                  sel=0.8228  hold=0.8227  drift=-0.0001
+
+best single member (hold): 0.8224
+
+BEST BY HOLDOUT:
+                            weighting      sel     hold     drift
+             eq_xgbcore+catcore+xgbv3 0.822856 0.822863  0.000006
+                        dirichlet_fit 0.822811 0.822734 -0.000078
+eq_xgbcore+catcore+xgbv3+xgbmin+xgbd4 0.822645 0.822721  0.000076
+    eq_xgbcore+catcore+xgbv3+lgbmcore 0.822244 0.822620  0.000376
+
+dirichlet weights: {'xgb_core': np.float64(0.18), 'xgb_v3': np.float64(0.299), 'xgb_min': np.float64(0.162), 'xgb_d4': np.float64(0.056), 'cat_core': np.float64(0.228), 'cat_v3': np.float64(0.001), 'lgbm_core': np.float64(0.051), 'hgb_core': np.float64(0.022)}

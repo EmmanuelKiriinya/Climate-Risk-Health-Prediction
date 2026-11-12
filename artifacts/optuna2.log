@@ -1,0 +1,37 @@
+
+### lgbm: best search 0.8248  fset=core_regime_v3 spw=1.056
+   #1 search=0.8248 holdout=0.8229 drift=-0.0019 fset=core_regime_v3 spw=1.06
+   #2 search=0.8245 holdout=0.8233 drift=-0.0012 fset=core_regime_v3 spw=1.06
+   #3 search=0.8244 holdout=0.8233 drift=-0.0012 fset=core_regime_v3 spw=1.06
+   #4 search=0.8243 holdout=0.8235 drift=-0.0009 fset=core_regime_v3 spw=1.14
+   #5 search=0.8243 holdout=0.8234 drift=-0.0009 fset=core_regime_v3 spw=1.10
+   -> lgbm best-by-holdout 0.8235 (fset=core_regime_v3, spw=1.137)
+
+### xgb: best search 0.8227  fset=core_regime_v3 spw=1.513
+   #1 search=0.8227 holdout=0.8221 drift=-0.0006 fset=core_regime_v3 spw=1.51
+   #2 search=0.8227 holdout=0.8225 drift=-0.0002 fset=core_regime_v3 spw=1.70
+   #3 search=0.8227 holdout=0.8223 drift=-0.0004 fset=core_regime_v3 spw=1.64
+   #4 search=0.8227 holdout=0.8227 drift=+0.0000 fset=core_regime_v3 spw=1.69
+   #5 search=0.8226 holdout=0.8222 drift=-0.0004 fset=core_regime_v3 spw=1.51
+   -> xgb best-by-holdout 0.8227 (fset=core_regime_v3, spw=1.695)
+
+### cat: best search 0.8226  fset=core spw=1.692
+   #1 search=0.8226 holdout=0.8228 drift=+0.0002 fset=core spw=1.69
+   #2 search=0.8225 holdout=0.8229 drift=+0.0004 fset=core spw=1.70
+   #3 search=0.8224 holdout=0.8228 drift=+0.0003 fset=core spw=1.68
+   #4 search=0.8224 holdout=0.8223 drift=-0.0001 fset=core spw=1.67
+   #5 search=0.8224 holdout=0.8229 drift=+0.0005 fset=core spw=1.70
+   -> cat best-by-holdout 0.8229 (fset=core, spw=1.703)
+
+=== blend the three per-family winners (verify seeds 300-319) ===
+  lgbm  0.8241 +/- 0.0003  fset=core_regime_v3 spw=1.137 rounds=114
+  xgb   0.8224 +/- 0.0003  fset=core_regime_v3 spw=1.695 rounds=138
+  cat   0.8228 +/- 0.0003  fset=core spw=1.703 rounds=620
+
+  equal thirds         0.8238
+  lgbm-heavy 2:1:1     0.8238
+  lgbm only            0.8241
+  lgbm+xgb             0.8233
+  lgbm+cat             0.8238
+
+  reference: v8 blend 0.8245 | v7 trio 0.8229

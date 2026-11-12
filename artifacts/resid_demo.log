@@ -1,0 +1,13 @@
+
+demographic join key        cells  n>=10   X2/df  perm p  verdict
+------------------------------------------------------------------------------
+exact age                     109     75   2.664   0.983  no signal beyond chance
+age x sex                     210     64   2.428   0.993  no signal beyond chance
+age x zone                    207     56   2.426   1.000  no signal beyond chance
+age x year                    847     33   2.836   0.945  no signal beyond chance
+age x month                   827     38   2.365   0.978  no signal beyond chance
+sex x year                     31     30   6.156   0.825  no signal beyond chance
+age-band x year                75     64   3.349   0.828  no signal beyond chance
+age-band x sex x era           20     20   9.242   0.278  no signal beyond chance
+age x sex x year             1133     50   2.375   0.715  no signal beyond chance
+age x era x sex x zone        535     33   3.281   0.900  no signal beyond chance

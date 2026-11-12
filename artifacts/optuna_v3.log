@@ -1,0 +1,31 @@
+override mask: 332 train rows (10.6%), rule accuracy 0.9880
+
+best search score 0.8475
+   value params_fam params_fset  params_spw
+0.847484       lgbm core_regime    1.415053
+0.847409       lgbm core_regime    1.413530
+0.847331       lgbm core_regime    1.388136
+0.847295       lgbm core_regime    1.461143
+0.847292       lgbm core_regime    1.466392
+0.847266       lgbm core_regime    1.413821
+0.847203       lgbm core_regime    1.415082
+0.847190       lgbm core_regime    1.421919
+0.847186       lgbm core_regime    1.446577
+0.847181       lgbm core_regime    1.463388
+0.847152       lgbm core_regime    1.371643
+0.847148       lgbm core_regime    1.424880
+
+re-scoring top-10 on held-out fold seeds 950-969
+  # 1 lgbm  core_regime  spw=1.42  search 0.8475 -> holdout 0.8479 (+0.0004)
+  # 2 lgbm  core_regime  spw=1.41  search 0.8474 -> holdout 0.8479 (+0.0005)
+  # 3 lgbm  core_regime  spw=1.39  search 0.8473 -> holdout 0.8479 (+0.0005)
+  # 4 lgbm  core_regime  spw=1.46  search 0.8473 -> holdout 0.8479 (+0.0006)
+  # 5 lgbm  core_regime  spw=1.47  search 0.8473 -> holdout 0.8475 (+0.0003)
+  # 6 lgbm  core_regime  spw=1.41  search 0.8473 -> holdout 0.8479 (+0.0007)
+  # 7 lgbm  core_regime  spw=1.42  search 0.8472 -> holdout 0.8480 (+0.0008)
+  # 8 lgbm  core_regime  spw=1.42  search 0.8472 -> holdout 0.8480 (+0.0008)
+  # 9 lgbm  core_regime  spw=1.45  search 0.8472 -> holdout 0.8477 (+0.0005)
+  #10 lgbm  core_regime  spw=1.46  search 0.8472 -> holdout 0.8479 (+0.0007)
+
+v8 blend, same seeds, same objective: 0.8484 +/- 0.0002
+-> beat this to justify a v11

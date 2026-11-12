@@ -1,0 +1,20 @@
+test-composition weights: mean=1.000 p10=0.600 p90=1.285 max=1.967
+running 92 jobs on 10 workers...
+
+scheme                      xgb_core  cat_core    xgb_v3  xgb_full  core-full
+-----------------------------------------------------------------------------
+GroupVillage k=3              0.8210    0.8199    0.8198    0.8158    +0.0047
+GroupVillage k=5              0.8212    0.8213    0.8212    0.8170    +0.0042
+GroupVillage k=10             0.8238    0.8230    0.8235    0.8186    +0.0048
+GroupVillage k=20             0.8237    0.8240    0.8232    0.8200    +0.0038
+LeaveP=2VillagesOut           0.8281    0.8272    0.8266    0.8244    +0.0032
+LeaveP=5VillagesOut           0.8250    0.8245    0.8263    0.8233    +0.0014
+LeaveP=10VillagesOut          0.8235    0.8235    0.8231    0.8195    +0.0040
+LeaveP=19VillagesOut          0.8190    0.8162    0.8185    0.8129    +0.0047
+LeaveOneYearOut               0.8134    0.8143    0.8151    0.8105    +0.0034
+PurgedEmbargoTime             0.7611    0.7547    0.7697    0.7542    +0.0038
+CombinatorialPurgedCV         0.7821    0.7871    0.7941    0.7796    +0.0050
+Bootstrap .632 (OOB)          0.8206    0.8174    0.8187    0.8148    +0.0042
+TestCompositionMatched        0.8214    0.8210    0.8206    0.8170    +0.0041
+
+core > full in 13/13 schemes
